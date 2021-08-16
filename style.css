@@ -1,6 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #d7e3fc;
 }
 
 .heading {
@@ -17,8 +21,12 @@ p {
 }
 
 .container {
+    background-color: #b6ccfe;
     width: 25rem;
     margin: 1rem auto;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 7px grey;
 }
 
 .billLabel{
@@ -30,6 +38,8 @@ p {
     padding: 0.6rem 1rem; 
     height: 2rem;
     width: 90%;
+    border-radius: 1rem;
+    border: none;
 }
 
 .next-btn {
@@ -42,6 +52,10 @@ p {
     font-size: 1rem;
 }
 
+.next-btn:hover {
+    background-color: #80ced7;
+}
+
 .amountLabel {
     margin: 0rem 6rem;
 }
@@ -51,6 +65,8 @@ p {
     padding: 0.6rem 1rem; 
     height: 2rem;
     width: 90%;
+    border-radius: 1rem;
+    border: none
 }
 
 .check-btn {
@@ -63,6 +79,10 @@ p {
     font-size: 1rem;
 }
 
+.check-btn:hover {
+    background-color: #80ced7;
+}
+
 .p-text{
     margin: .8rem 0rem;
     text-align: center;
@@ -70,11 +90,11 @@ p {
 }
 
 table {
-    border: 2px solid black
+    border: 2px solid #4361ee;
 }
 
 td {
-    border: 1px solid orange;
+    border: 1px solid #003459;
     margin: 1rem;   
     width: 13rem;
     height: 3.5rem;
