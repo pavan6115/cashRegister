@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Cash Register</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section class="heading">
         <h1>Cash Register</h1>
@@ -19,49 +21,53 @@
         <label for="billAmount" class="billLabel">Enter the Bill Amount : </label>
         <br>
         <input type="number" name="billAmount" id="billAmount">
-        
+
         <br>
         <button class="next-btn">Next</button>
 
         <br>
-        <label for="userAmount" class="amountLabel">Enter the Amount you paid : </label>
-        <br>
-        <input type="number" name="userAmount" id="userAmount"> 
+        <section class="hide">
+            <label for="userAmount" class="amountLabel">Enter the Amount you paid : </label>
+            <br>
+            <input type="number" name="userAmount" id="userAmount">
 
-        <button class="check-btn">Check</button>
+            <button class="check-btn">Check</button>
 
-        <p class="errorMsg"></p>
+            <p class="errorMsg"></p>
 
-        <p class="p-text">
-            Return Change 
-        </p>
 
-        <table>
-            <tbody>
-                <tr>
-                    <td class="td-center">No of Notes</td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                    <td class="td-center no-of-notes"></td>
-                </tr>
-                <tr>
-                    <td class="td-center">Notes</td>
-                    <td class="td-center">2000</td>
-                    <td class="td-center">500</td>
-                    <td class="td-center">100</td>
-                    <td class="td-center">20</td>
-                    <td class="td-center">10</td>
-                    <td class="td-center">5</td>
-                    <td class="td-center">1</td>
-                </tr>
-            </tbody>
-        </table>
+            <p class="p-text">
+                Return Change
+            </p>
 
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="td-center">No of Notes</td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                        <td class="td-center no-of-notes"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-center">Notes</td>
+                        <td class="td-center">2000</td>
+                        <td class="td-center">500</td>
+                        <td class="td-center">100</td>
+                        <td class="td-center">20</td>
+                        <td class="td-center">10</td>
+                        <td class="td-center">5</td>
+                        <td class="td-center">1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <p class="p-hide"></p>
     </section>
     <script src="./script.js"></script>
 </body>
+
 </html>
