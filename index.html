@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="heading">
+        <h1>Cash Register</h1>
+        <p>
+            Enter the bill amount & the amount given by you to the shop owner to know how much <br>
+            change should be given back to you
+        </p>
+    </section>
+    <section class="container">
+        <label for="billAmount" class="billLabel">Enter the Bill Amount : </label>
+        <br>
+        <input type="number" name="billAmount" id="billAmount">
+        
+        <br>
+        <button class="next-btn">Next</button>
+
+        <br>
+        <label for="userAmount" class="amountLabel">Enter the Amount you paid : </label>
+        <br>
+        <input type="number" name="userAmount" id="userAmount">
+
+        <button class="check-btn">Check</button>
+
+        <p class="p-text">
+            Return Change 
+        </p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td class="td-center">No of Notes</td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                    <td class="td-center"></td>
+                </tr>
+                <tr>
+                    <td class="td-center">Notes</td>
+                    <td class="td-center">2000</td>
+                    <td class="td-center">500</td>
+                    <td class="td-center">100</td>
+                    <td class="td-center">20</td>
+                    <td class="td-center">10</td>
+                    <td class="td-center">5</td>
+                    <td class="td-center">1</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
