@@ -4,6 +4,9 @@ const nextBtn = document.querySelector('.next-btn')
 const checkBtn = document.querySelector('.check-btn')
 const errorMsg = document.querySelector('.errorMsg')
 const noOfNotes = document.querySelectorAll('.no-of-notes')
+const pHide = document.querySelector('.p-hide')
+const hide = document.querySelector('.hide')
+hide.style.display = "none"
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1]
 
@@ -42,5 +45,16 @@ function showErrorMsg(message){
     errorMsg.style.display = "block"
     errorMsg.innerText = message
 }
+
+nextBtn.addEventListener('click', () => {
+    const amount = billAmount.value
+    if (amount >= 1) {
+        hide.style.display = "block" 
+        pHide.innerText = ""
+    }
+    else{
+        pHide.innerText = "Invalid Amount, please check"
+    }
+})
 
 checkBtn.addEventListener('click', checkBillAndUserAmount)
