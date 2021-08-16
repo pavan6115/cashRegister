@@ -10,6 +10,7 @@ hide.style.display = "none"
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1]
 
+checkBtn.addEventListener('click', checkBillAndUserAmount)
 
 function checkBillAndUserAmount(){
     if (billAmount.value > 0) {
@@ -57,4 +58,4 @@ nextBtn.addEventListener('click', () => {
     }
 })
 
-checkBtn.addEventListener('click', checkBillAndUserAmount)
+
